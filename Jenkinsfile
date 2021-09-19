@@ -31,6 +31,15 @@ pipeline {
         sh 'sh run_deploy_script.sh'
       }
     }
-
+    
   }
+  
+  post {
+    always {
+      sh 'docker stop webserver' 
+    }
+  }
+
+
+
 }

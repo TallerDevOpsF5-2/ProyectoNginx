@@ -1,4 +1,4 @@
 #! /bin/bash
 echo "Run Deploy"
-docker stop web
-docker rm web
+docker stop webserver
+docker rm webserver

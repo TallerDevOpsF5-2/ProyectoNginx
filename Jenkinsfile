@@ -34,12 +34,4 @@ pipeline {
     
   }
   
-  post {
-    always {
-      sh 'docker stop webserver' 
-    }
-  }
-
-
-
 }
